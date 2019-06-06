@@ -19,7 +19,7 @@ def pig_latin(fact):
     send = {'input_text': fact}
     response = requests.post('https://hidden-journey-62459.herokuapp.com/piglatinize/', data=send)
     url = response.url
-    return "<a>Here's a pig-latinized quote:</a><a href={}> {}</a>".format(url, url)
+    return "<a>Here's a pig-latinized fact:</a><a href={}> {}</a>".format(url, url)
 
 @app.route('/')
 def home():
